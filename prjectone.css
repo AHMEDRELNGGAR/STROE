@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: linear-gradient(#111, #222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.589);
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(40% at right 70%);
+}
+
+.cotainer {
+    background-color: aliceblue;
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav .logo:hover {
+    color: #999;
+    transition: 0.2s;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+nav ul li a:hover {
+    color: rgba(255, 0, 0, 0.589);
+    transition: 0.1s;
+}
+
+
+nav ul li a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.content .text {
+    color: rgba(255, 255, 255, 0.616);
+    width: 40%;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content .text h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.content .text p {
+    font-size: 20px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.content .imgs {
+    width: 40%;
+}
+
+.content .imgs img {
+    width: 400px;
+}
